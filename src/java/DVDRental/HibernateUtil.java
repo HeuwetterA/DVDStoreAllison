@@ -13,11 +13,10 @@ package DVDRental;
  *
  * @author allis
  */
+import org.hibernate.cfg.Configuration;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.service.ServiceRegistry;
-import org.hibernate.cfg.Configuration;
-import org.hibernate.SessionFactory.SessionFactoryOptions;
 public class HibernateUtil {
 
     private static final SessionFactory sessionFactory;

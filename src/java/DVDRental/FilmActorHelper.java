@@ -176,7 +176,7 @@ public class FilmActorHelper {
     }
 
     // this method is going to insert a film actor into the film actor table
-    private int insertFilmActor(int actor, int film, TimeStamp timeStamp) {
+    private int insertFilmActor(int actor, int film, Timestamp timeStamp) {
 
         int result = 0;
 

@@ -75,4 +75,122 @@ public class FilmHelper {
         
         return filmList.size();
     }
+    
+    public List getActorsByID (int filmId){
+        
+        List<Actor> actorList = null;
+        
+        String sql = "select * from actor, film_actor, film "
+                + "where actor.actor_id = film_actor.actor_id "
+                + "and film_actor.film_id = film.film_id "
+                + "and film.film_id = :id";
+        
+        try {
+            
+            //3 lines of code are always consistant 
+            if (!this.session.getTransaction().isActive()) {
+                session.beginTransaction();
+            }
+
+            SQLQuery q = session.createSQLQuery(sql);
+
+            q.addEntity(Actor.class);
+            
+            q.setParameter("id", filmId);
+            
+            actorList = (List<Actor>) q.list();
+            
+        } catch(Exception e){
+            e.printStackTrace();
+        }
+        
+        return actorList;
+    }
+    
+    public Category getCategoryByID (int filmId){
+        
+        List<Category> categoryList = null;
+        
+        String sql = "select * from category, film_category, film "
+                + "where category.category_id = film_category.category_id "
+                + "and film_category.film_id = film.film_id "
+                + "and film.film_id = :id";
+        
+        try {
+            
+            //3 lines of code are always consistant 
+            if (!this.session.getTransaction().isActive()) {
+                session.beginTransaction();
+            }
+
+            SQLQuery q = session.createSQLQuery(sql);
+
+            q.addEntity(Category.class);
+            
+            q.setParameter("id", filmId);
+            
+            categoryList = (List<Category>) q.list();
+            
+        } catch(Exception e){
+            e.printStackTrace();
+        }
+        
+        return categoryList.get(0);
+    }
+    
+    public Film getFilmDetails (int filmId){
+        
+        Film film = null;
+        
+        String sql = "select * from film where film_id = :id";
+        
+        try {
+            
+            //3 lines of code are always consistant 
+            if (!this.session.getTransaction().isActive()) {
+                session.beginTransaction();
+            }
+
+            SQLQuery q = session.createSQLQuery(sql);
+
+            q.addEntity(Film.class);
+            
+            q.setParameter("id", filmId);
+            
+            film = (Film) q.uniqueResult();
+            
+        } catch(Exception e){
+            e.printStackTrace();
+        }
+        
+        return film;
+    }
+    
+    public String getLanguageByID (int langId) {
+        
+        Language language = null;
+        
+        String sql = "select * from language where language_id = :id";
+        
+        try {
+            
+            //3 lines of code are always consistant 
+            if (!this.session.getTransaction().isActive()) {
+                session.beginTransaction();
+            }
+
+            SQLQuery q = session.createSQLQuery(sql);
+
+            q.addEntity(Language.class);
+            
+            q.setParameter("id", langId);
+            
+            language = (Language) q.list();
+            
+        } catch(Exception e){
+            e.printStackTrace();
+        }
+        
+        return language.getName();
+    }
 }

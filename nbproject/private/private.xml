@@ -4,17 +4,19 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/allis/Documents/NetBeansProjects/DVDStoreAllison/web/index.xhtml</file>
+            <file>file:/C:/Users/allis/Documents/NetBeansProjects/DVDStoreAllison/src/java/DVDRental/FilmHelper.java</file>
             <file>file:/C:/Users/allis/Documents/NetBeansProjects/DVDStoreAllison/src/java/hibernate.cfg.xml</file>
             <file>file:/C:/Users/allis/Documents/NetBeansProjects/DVDStoreAllison/web/template.xhtml</file>
+            <file>file:/C:/Users/allis/Documents/NetBeansProjects/DVDStoreAllison/src/java/DVDRental/FilmController.java</file>
+            <file>file:/C:/Users/allis/Documents/NetBeansProjects/DVDStoreAllison/src/java/hibernate.reveng.xml</file>
+            <file>file:/C:/Users/allis/Documents/NetBeansProjects/DVDStoreAllison/web/actor.xhtml</file>
+            <file>file:/C:/Users/allis/Documents/NetBeansProjects/DVDStoreAllison/src/java/DVDRental/Actor.hbm.xml</file>
+            <file>file:/C:/Users/allis/Documents/NetBeansProjects/DVDStoreAllison/src/java/DVDRental/ActorController.java</file>
             <file>file:/C:/Users/allis/Documents/NetBeansProjects/DVDStoreAllison/src/java/DVDRental/ActorHelper.java</file>
             <file>file:/C:/Users/allis/Documents/NetBeansProjects/DVDStoreAllison/web/film.xhtml</file>
-            <file>file:/C:/Users/allis/Documents/NetBeansProjects/DVDStoreAllison/src/java/hibernate.reveng.xml</file>
             <file>file:/C:/Users/allis/Documents/NetBeansProjects/DVDStoreAllison/src/java/DVDRental/FilmActorController.java</file>
-            <file>file:/C:/Users/allis/Documents/NetBeansProjects/DVDStoreAllison/web/actor.xhtml</file>
             <file>file:/C:/Users/allis/Documents/NetBeansProjects/DVDStoreAllison/src/java/DVDRental/FilmActorHelper.java</file>
-            <file>file:/C:/Users/allis/Documents/NetBeansProjects/DVDStoreAllison/src/java/DVDRental/Actor.hbm.xml</file>
             <file>file:/C:/Users/allis/Documents/NetBeansProjects/DVDStoreAllison/src/java/DVDRental/HibernateUtil.java</file>
-            <file>file:/C:/Users/allis/Documents/NetBeansProjects/DVDStoreAllison/src/java/DVDRental/ActorController.java</file>
         </group>
     </open-files>
 </project-private>
